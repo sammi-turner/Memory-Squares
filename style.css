@@ -1,0 +1,130 @@
+body {
+    background: #f9f9f9;
+    margin-top: 3%;
+    color: #555;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#game-wrap {
+    margin: 5px;
+    border: 1px solid #000;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+
+#game {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+    border: 1px dashed #ddd;
+}
+
+.square {
+    display: inline-block;
+    background: #ddd;
+    width: 20%;
+    margin-bottom: 0px;
+    cursor: pointer;
+    border-radius: 3px
+}
+
+.playing .square {
+    background: #c1c5ff;
+}
+
+.game-over .square {
+    background: #f7d4d4;
+}
+
+.square.active {
+    background: #1fc55c;
+}
+
+.square.wrong {
+    background: #df1515;
+}
+
+.square.correction {
+    background: #99ff99;
+}
+
+#action-btn {
+    display: block;
+    margin-bottom: 2%;
+    width: 55%;
+    background: #c1c1c1;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+
+#action-btn.game-on {
+    background: #0088ff
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: #fff;
+    }
+
+    main {
+        width: auto;
+        max-width: none;
+        margin: 0 auto;
+        border: none;
+        border-radius: 0;
+    }
+
+    #instructions {
+        font-size: 16px;
+        min-height: 44px;
+    }
+
+    #game-wrap {
+        display: block;
+        width: auto;
+        margin: 5%;
+    }
+
+    #game {
+        display: block;
+        width: auto;
+        max-width: none;
+    }
+
+    .square {
+        width: 30%;
+    }
+
+    #action-btn {
+        font-size: 20px;
+        width: 90%;
+        max-width: none;
+    }
+
+    #info {
+        display: block;
+        max-width: none;
+        width: auto;
+        margin: 60px auto 0;
+    }
+}
