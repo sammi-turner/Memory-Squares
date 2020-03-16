@@ -264,22 +264,3 @@ $action.addEventListener( 'click', function(){
 
     return false;
 });
-
-
-// player clicks start button
-// sequence is created
-// game goes to 'sequence' status
-// sequence plays
-// when sequence plays, game goes to 'playing' mode; listen for player click
-// a square is clicked
-    // if correct one is clicked
-        // highlight square
-        // add point
-        // if square was last one in sequence
-            // advance level
-            // add number to sequence
-            // run sequence again
-    // else 
-        // game goes to 'game over' status
-        // sequence is reset
-        // stats are reset
